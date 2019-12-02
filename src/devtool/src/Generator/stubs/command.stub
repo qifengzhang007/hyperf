@@ -17,12 +17,13 @@ class %CLASS% extends HyperfCommand
      * @var ContainerInterface
      */
     protected $container;
+    protected static $defaultName = 'demo:command';
 
     public function __construct(ContainerInterface $container)
     {
         $this->container = $container;
 
-        parent::__construct('demo:command');
+        parent::__construct('');
     }
 
     public function configure()
